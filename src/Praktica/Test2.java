@@ -18,37 +18,37 @@ public class Test2 {
 
         Scanner scanner = new Scanner(System.in);
         int criterion;
-            System.out.println("Введите критерии фильтрации:");
-            System.out.println("1 - Модель");
-            System.out.println("2 - Цена");
-            System.out.println("3 - Операционная система");
-            System.out.println("0 - Завершить программу");
-            criterion = scanner.nextInt();
+        System.out.println("Введите критерии фильтрации:");
+        System.out.println("1 - Модель");
+        System.out.println("2 - Цена");
+        System.out.println("3 - Операционная система");
+        System.out.println("0 - Завершить программу");
+        criterion = scanner.nextInt();
 
-                switch (criterion) {
-                    case 1:
-                        System.out.println("Введите модель:");
-                        String model = scanner.next();
-                        filters.put("model", model);
-                        break;
-                    case 2:
-                        System.out.println("Введите максимальную цену:");
-                        double maxPrice = scanner.nextDouble();
-                        filters.put("maxPrice", maxPrice);
-                        break;
-                    case 3:
-                        System.out.println("Введите операционную систему:");
-                        String os = scanner.next();
-                        filters.put("os", os);
-                        break;
-                    default:
-                        System.out.println("Некорректный выбор");
-                }
+        switch (criterion) {
+            case 1:
+                System.out.println("Введите модель:");
+                String model = scanner.next();
+                filters.put("model", model);
+                break;
+            case 2:
+                System.out.println("Введите максимальную цену:");
+                double maxPrice = scanner.nextDouble();
+                filters.put("maxPrice", maxPrice);
+                break;
+            case 3:
+                System.out.println("Введите операционную систему:");
+                String os = scanner.next();
+                filters.put("os", os);
+                break;
+            default:
+                System.out.println("Некорректный выбор");
+        }
 
-                filterAndDisplayPhones(phones, filters);
+        filterAndDisplayPhones(phones, filters);
 
 
-            scanner.close();
+        scanner.close();
 
     }
 
@@ -86,7 +86,7 @@ public class Test2 {
 }
 
 
-class MobilePhone{
+class MobilePhone {
 
     private String brand;
     private String model;
@@ -94,7 +94,7 @@ class MobilePhone{
     private double price;
 
 
-    public MobilePhone(String brand, String model, String operationSystem, double price ){
+    public MobilePhone(String brand, String model, String operationSystem, double price) {
         this.brand = brand;
         this.model = model;
         this.operationSystem = operationSystem;
@@ -104,6 +104,7 @@ class MobilePhone{
     public String getOperationSystem() {
         return operationSystem;
     }
+
     public void setOperationSystem(String operationSystem) {
         this.operationSystem = operationSystem;
     }
@@ -111,6 +112,7 @@ class MobilePhone{
     public String getModel() {
         return model;
     }
+
     public void setModel(String model) {
         this.model = model;
     }
@@ -118,6 +120,7 @@ class MobilePhone{
     public String getBrand() {
         return brand;
     }
+
     public void setBrand(String brand) {
         this.brand = brand;
     }
@@ -125,6 +128,7 @@ class MobilePhone{
     public double getPrice() {
         return price;
     }
+
     public void setPrice(double price) {
         this.price = price;
     }
