@@ -1,4 +1,4 @@
-package Extention;
+package Extention.Lesson1And2;
 
 public class Task2 {
     public static void main(String[] args) {

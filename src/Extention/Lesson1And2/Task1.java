@@ -1,4 +1,4 @@
-package Extention;
+package Extention.Lesson1And2;
 
 import java.util.Scanner;
 
