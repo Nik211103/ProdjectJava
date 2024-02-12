@@ -1,4 +1,4 @@
-package Extention.Lesson3;
+package Extention.HomeWork;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
